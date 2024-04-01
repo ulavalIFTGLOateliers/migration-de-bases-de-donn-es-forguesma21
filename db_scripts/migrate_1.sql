@@ -20,4 +20,4 @@ UPDATE musician SET role = "piano", bandName = "Luna" WHERE musicianName = "Luna
 
 
 ALTER TABLE album DROP FOREIGN KEY FK_A_singerName,
-ADD CONSTRAINT FK_A_NEW_singerName FOREIGN KEY (singerName) REFERENCES musician (musicianName);
+ADD CONSTRAINT FK_C_musicianName FOREIGN KEY (singerName) REFERENCES musician (musicianName);
